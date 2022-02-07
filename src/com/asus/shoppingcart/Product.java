@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Product {
 
-
 	private String productName;
 	private String brand;
 	private String property;
