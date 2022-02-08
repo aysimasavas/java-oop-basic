@@ -1,4 +1,4 @@
-package com.asus.shoppingcart;
+package com.asus.shoppingcart.model;
 
 public class User {
 	public static final String userName = "Aysima";

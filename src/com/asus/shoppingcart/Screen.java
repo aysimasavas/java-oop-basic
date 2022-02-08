@@ -3,6 +3,11 @@ package com.asus.shoppingcart;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.asus.shoppingcart.model.Coat;
+import com.asus.shoppingcart.model.Dress;
+import com.asus.shoppingcart.model.Shoes;
+import com.asus.shoppingcart.model.User;
+
 public class Screen
 {
 
@@ -13,6 +18,7 @@ public class Screen
 		int numberOfChosen = 0;
 		double basket = 0;
 		boolean condition = true;
+		String name = "";
 		int password;
 
 		Coat coat = new Coat("Yünlü kaban", "Bershka", "deri detaylý", 1, 200, numberOfChosen, "M");
@@ -21,14 +27,14 @@ public class Screen
 		
 		ArrayList<String> myBasket = new ArrayList<String>();
 
-
 		System.out.println("Hoþgeldiniz..");
+		System.out.println("adinizi:");
+		name = scan.next();
 		System.out.println("Þifrenizi giriniz:");
 		password = scan.nextInt();
 		System.out.println("****************************************************");
 
-
-		if (password == User.password) {
+		if (name.equals(User.userName) && password == User.password) {
 			System.out.println("Hoþgeldiniz " + User.userName);
 			while (condition) {
 				System.out.println("\n\nAlmak istediginiz ürünü seciniz..");

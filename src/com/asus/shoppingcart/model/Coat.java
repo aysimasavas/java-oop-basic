@@ -1,6 +1,8 @@
-package com.asus.shoppingcart;
+package com.asus.shoppingcart.model;
 
 import java.util.Scanner;
+
+import com.asus.shoppingcart.model.utils.IProduct;
 
 public class Coat extends Product implements IProduct {
 

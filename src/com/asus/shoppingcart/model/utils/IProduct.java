@@ -1,4 +1,4 @@
-package com.asus.shoppingcart;
+package com.asus.shoppingcart.model.utils;
 
 import java.util.Scanner;
 
